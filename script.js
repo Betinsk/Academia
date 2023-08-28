@@ -23,10 +23,10 @@ const a0 = document.createElement('a')
 a0.href = 'C:/Users/Betinho/Documents/Academia/index.html'
 a0.innerHTML = 'Index'
 const a1 = document.createElement('a')
-a1.href = 'C:/Users/Betinho/Documents/Academia/views/benefits.html'
+a1.href = './views/benefits.html'
 a1.innerHTML = 'Benefits'
 const a2 = document.createElement('a')
-a2.href = 'C:/Users/Betinho/Documents/Academia/views/locais.html'
+a2.href = './views/locais.html'
 a2.innerHTML = 'Places'
 const a3 = document.createElement('a')
 
