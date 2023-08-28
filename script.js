@@ -14,19 +14,19 @@ const li3= document.createElement('li')
 divImg.classList.add('divImg')
 
 const img = document.createElement('img')
-img.src= 'C:/Users/Betinho/Documents/PROJETOS/academiaHtml/WorkOutProject/assets/adesivo-decorativo-de-parede-academia-musculacao-fitness-papel.jpg'
+img.src= 'C:/Users/Betinho/Documents/Academia/assets/adesivo-decorativo-de-parede-academia-musculacao-fitness-papel.jpg'
 
 const a00 = document.createElement('span')
 a00.innerHTML = 'PureForme Fitness'
 
 const a0 = document.createElement('a')
-a0.href = 'C:/Users/Betinho/Documents/PROJETOS/academiaHtml/WorkOutProject/index.html'
+a0.href = 'C:/Users/Betinho/Documents/Academia/index.html'
 a0.innerHTML = 'Index'
 const a1 = document.createElement('a')
-a1.href = 'C:/Users/Betinho/Documents/PROJETOS/academiaHtml/WorkOutProject/views/benefits.html'
+a1.href = 'C:/Users/Betinho/Documents/Academia/views/benefits.html'
 a1.innerHTML = 'Benefits'
 const a2 = document.createElement('a')
-a2.href = 'C:/Users/Betinho/Documents/PROJETOS/academiaHtml/WorkOutProject/views/locais.html'
+a2.href = 'C:/Users/Betinho/Documents/Academia/views/locais.html'
 a2.innerHTML = 'Places'
 const a3 = document.createElement('a')
 
