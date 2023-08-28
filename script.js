@@ -14,7 +14,7 @@ const li3= document.createElement('li')
 divImg.classList.add('divImg')
 
 const img = document.createElement('img')
-img.src= 'C:/Users/Betinho/Documents/Academia/assets/adesivo-decorativo-de-parede-academia-musculacao-fitness-papel.jpg'
+img.src= 'C:/Users/Betinho/Documents/Academia/assets/places/adesivo-decorativo-de-parede-academia-musculacao-fitness-papel.jpg'
 
 const a00 = document.createElement('span')
 a00.innerHTML = 'PureForme Fitness'
