@@ -16,7 +16,6 @@ body{
 
 .banner{
     width: 100%;
-    height: 450px;
     object-fit: cover; /* Redimensiona para cobrir o espaço mantendo a proporção */
     object-position: center top;
 }
