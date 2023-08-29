@@ -20,7 +20,11 @@ const a00 = document.createElement('span')
 a00.innerHTML = 'PureForme Fitness'
 
 const a0 = document.createElement('a')
+<<<<<<< HEAD
 a0.href = 'index.html'
+=======
+a0.href = './index.html'
+>>>>>>> 2a01fb7a19a7746290dfe4f39199106a85d122d4
 a0.innerHTML = 'Index'
 const a1 = document.createElement('a')
 a1.href = 'views/benefits.html'
