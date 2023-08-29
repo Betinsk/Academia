@@ -28,7 +28,7 @@ const nav = document.getElementById('nav')
 
 const divImg = createElementWithClass('div', 'divImg');
 const img = document.createElement('img')
-img.src= '../assets/places/logo.jpg'
+img.src= 'assets/places/logo.jpg'
 divImg.appendChild(img)
 
 const title = createElementWithClass('span', 'nav-title', 'PureForme Fitness');
