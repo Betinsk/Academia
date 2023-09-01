@@ -42,6 +42,8 @@ const ul = createElementWithClass('ul', 'nav-list');
 ul.appendChild(createListItem('index.html', 'Index'));
 ul.appendChild(createListItem('benefits.html', 'Benefits'));
 ul.appendChild(createListItem('locais.html', 'Places'));
+ul.appendChild(createListItem('workouts.html', 'Workouts'));
+
 
 // Criando o ícone de menu hamburguer
 const divHamburger = createElementWithClass('div', 'hamburger');

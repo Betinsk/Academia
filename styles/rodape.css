@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/static/Raleway-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.footer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 150px;
+    background: #FFC0CB;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 25px;
+  
+}
+
+.footer .title {
+    font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+
+.footer-content {
+    width: 55%; /* Define a largura de cada div como 33% do espaço disponível */
+    box-sizing: border-box; /* Garante que a largura inclua a borda e o preenchimento (box-sizing: border-box é opcional, dependendo do seu layout) */
+
+}
+
+.footer-content p {
+    margin: 3px;
+}
+
+.footer-media{
+    width: 10%; /* Define a largura de cada div como 33% do espaço disponível */
+    box-sizing: border-box; /* Garante que a largura inclua a borda e o preenchimento (box-sizing: border-box é opcional, dependendo do seu layout) */
+    align-self: center;
+}
+
+.quick-links{
+    width: 35%; /* Define a largura de cada div como 33% do espaço disponível */
+    box-sizing: border-box; /* Garante que a largura inclua a borda e o preenchimento (box-sizing: border-box é opcional, dependendo do seu layout) */
+
+}
+
+.quick-list {
+    list-style: none;
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove a margem padrão da lista */
+}
+
+.quick-item  {
+    padding: 2px;
+}
+
+
+@media (max-width: 900px) {
+    .footer {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer-content, .footer-media, .quick-links {
+        width: 100%;
+    }
+}
