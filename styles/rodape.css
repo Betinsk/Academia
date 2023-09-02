@@ -8,15 +8,16 @@
 .footer {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    margin-top: 150px;
+    margin: 150px 0 9px 0;
     background: #FFC0CB;
     font-family: 'Raleway';
     font-weight: 300;
     font-size: 1.2em;
     text-align: center;
-    padding-bottom: 25px;
-  
+    padding: 25px;
+    padding: 20px; /* Espaçamento interno para o conteúdo do footer */
+    box-shadow: 0px -7px 10px rgba(231, 33, 33, 0.2); /* Definição da sombra */
+
 }
 
 .footer .title {
@@ -39,7 +40,20 @@
 .footer-media{
     width: 10%; /* Define a largura de cada div como 33% do espaço disponível */
     box-sizing: border-box; /* Garante que a largura inclua a borda e o preenchimento (box-sizing: border-box é opcional, dependendo do seu layout) */
+    font-size:36px;   
     align-self: center;
+}
+
+.footer-media i{
+    margin: 5px;
+}
+
+@media (min-width: 900px) and (max-width: 1253px) {
+    .footer-media{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
 
 .quick-links{
