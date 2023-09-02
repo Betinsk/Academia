@@ -71,6 +71,7 @@
   width: 100px;
   height: 100px;
   display: block;
+  border-radius: 10%;
 }
 
 /* Estilo para telas menores (responsivo) */
