@@ -26,10 +26,10 @@
   gap: 35px;
   box-sizing: border-box;
   margin-bottom: 25px;
-  box-shadow: -3px 7px 10px rgba(231, 33, 33, 0.2); /* Definição da sombra */
+  box-shadow: -3px 7px 10px rgba(141, 3, 146, 0.2); /* Definição da sombra */
   padding: 10px;
   align-items: flex-end;
-  background: #FFC0CB;
+  background: #f38bcb;
 }
 
 .nav-list {
@@ -49,20 +49,20 @@
   text-decoration: none;
   font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
   font-size: 15px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transition: color 0.3s;  /* Efeito de transição suave ao passar o mouse */
 }
 
 /* Estilizar os links de navegação quando o mouse passa por cima */
 .nav-link:hover {
-  color: #007bff;
+  color: #ee2cf5;
   /* Cor do texto ao passar o mouse */
 }
 
 .nav-title {
   font-family: 'Raleway', 'Arial Narrow', Arial, sans-serif;
   font-size: 17px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 10px;
   font-weight: 700;
 }

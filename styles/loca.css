@@ -44,7 +44,7 @@ body {
 }
 .card-text h3 {
    margin: 4px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: 'Raleway';
    font-size: 17px;
    color: rgb(204, 204, 248);
    text-align: center;
@@ -56,13 +56,12 @@ body {
     text-decoration: inherit;
     font-size: 14px;
     line-height: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Raleway';
 }
 
 .card-text {
     padding: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    font-family: 'Raleway';
 }
 
 .card-text p {
@@ -112,8 +111,7 @@ body {
         border-radius: 200px;
         border: none;
         color: rgba(1,1,20,.88);
-        font: 700 13px  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        ;
+        font-family: 'Raleway';
         cursor: pointer;
        
 }
