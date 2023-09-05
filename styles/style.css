@@ -34,10 +34,27 @@ body{
 }
 
 .membership {
-    width: 45%;
+    width: 40%;
     margin: auto;
-
 }
+
+.bannerVideo {
+    width: 100%;
+    position: relative;
+  }
+
+.bannerVideo img {
+    position: absolute;
+     width: 30%; /* 50% da largura da div pai */
+     height: 100%;
+     left: 36%; /* 25% da esquerda da div pai */
+    z-index: 1; /* Define a ordem de sobreposição, maior número = mais na frente */
+}
+.bannerVideo video{
+    width: 100%;
+}
+
+
 
 .videos {
     display: flex;
