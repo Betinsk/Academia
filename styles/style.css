@@ -36,6 +36,9 @@ body{
 .membership {
     width: 40%;
     margin: auto;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 1.2em;
 }
 
 .cardsMember {
@@ -55,24 +58,60 @@ body{
 .cardContent {
     color: white;
     padding: 25px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 0.8em;
+    text-align: left;
 }
 
 .cardContentTitle{
     display: inline;
+    font-size: 20px;
+    margin-right: 25px;
 }
 
 .bestValue {
     display: inline;
-    padding: 5px;
+    padding: 7px;
     margin: 0;
-    background-color: yellow;
+    background-color: rgb(243, 227, 9);
     color: rgb(89, 44, 130);
-    font-size: 1px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 27px;
+    color: yellow;
+    font-weight: bold;
+    margin: 0;
+}
+
+.learnMore{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 25px 0px 25px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.learnMoreP {
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(243, 227, 9);
+    color: rgb(89, 44, 130);
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
 .bannerVideo {
     width: 100%;
     position: relative;
+    
   }
 
 .bannerVideo img {
@@ -108,12 +147,12 @@ body{
     margin:auto;
 }
 
-
-.container p{
+.container {
     font-family: 'Raleway';
     font-weight: 300;
     font-size: 1.2em;
  }
+
 
  .imgindex{
     align-self: center;

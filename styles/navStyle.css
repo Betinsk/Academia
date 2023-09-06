@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+body {
+  margin: 0px;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -26,10 +30,12 @@
   gap: 35px;
   box-sizing: border-box;
   margin-bottom: 25px;
-  box-shadow: -3px 7px 10px rgba(141, 3, 146, 0.2); /* Definição da sombra */
+ /* box-shadow: -3px 7px 10px rgba(141, 3, 146, 0.2); /* Definição da sombra */
   padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0.3, 0.3);
+
   align-items: flex-end;
-  background: #f38bcb;
+  background: #1f1f1f;
 }
 
 .nav-list {
