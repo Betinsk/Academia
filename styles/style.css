@@ -38,6 +38,38 @@ body{
     margin: auto;
 }
 
+.cardsMember {
+    display: flex;
+    justify-content: center;
+}
+
+.cardMember {
+    width: 375px;
+    height: 365px;
+    margin: 10px;
+    border-radius: 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.3, 0.3);
+    background: linear-gradient(330.17deg, #14142B 18.22%, #561496 84.39%);
+}
+
+.cardContent {
+    color: white;
+    padding: 25px;
+}
+
+.cardContentTitle{
+    display: inline;
+}
+
+.bestValue {
+    display: inline;
+    padding: 5px;
+    margin: 0;
+    background-color: yellow;
+    color: rgb(89, 44, 130);
+    font-size: 1px;
+}
+
 .bannerVideo {
     width: 100%;
     position: relative;
@@ -53,8 +85,6 @@ body{
 .bannerVideo video{
     width: 100%;
 }
-
-
 
 .videos {
     display: flex;
