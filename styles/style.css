@@ -162,8 +162,24 @@ h1 {
 
     @media (max-width: 900px) {
     
+        .container {
+            width: 100%;
+        }
+
         h1 {
             font-family: 'Raleway';
             font-size: 100%;
+        }
+
+        .cardsMember {
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .cardMember {
+           max-width: 100%;
+           margin: 0px;
+           margin-bottom: 10px;
+
         }
     }
