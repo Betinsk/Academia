@@ -62,8 +62,10 @@ body {
 
 /* Estilizar os links de navegação quando o mouse passa por cima */
 .nav-link:hover {
-  color: #f299f5;
   /* Cor do texto ao passar o mouse */
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 9%;
 }
 
 .nav-title {

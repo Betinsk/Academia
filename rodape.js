@@ -52,9 +52,10 @@ function createElementWithClass(tag, className, content) {
   rodape.appendChild(divFooterContant)
   divFooterContant.appendChild(divFooterInfo)
   divFooterInfo.appendChild(createElementWithClass('h3', 'title', 'Contact Us'))
-  divFooterInfo.appendChild(createListP('fa fa-map-marker', 'Endereço: Rua da Academia, 123 '))
-  divFooterInfo.appendChild(createListP('fa fa-envelope', 'Email: contato@academiaexemplo.com '))
-  divFooterInfo.appendChild(createListP('fa fa-phone', 'Telefone: (123) 456-7890 '))
+
+  divFooterInfo.appendChild(createListP('fa fa-map-marker', 'Adress: Amherst Dr NE, 101 Albuquerque, NM 87106, EUA '))
+  divFooterInfo.appendChild(createListP('fa fa-envelope', 'Email: purefitness@gym.com '))
+  divFooterInfo.appendChild(createListP('fa fa-phone', 'PhoneNumber: (123) 456-7890 '))
 
   //Div social icons
   const divSocialLinks = createElementWithClass('div', 'footer-media')
@@ -66,10 +67,10 @@ function createElementWithClass(tag, className, content) {
   const quickLinks = createElementWithClass('div', 'quick-links')
   const ulFooter = createElementWithClass('ul', 'quick-list');
   quickLinks.appendChild(createElementWithClass('h3', 'title', 'Quick links'))
-  ulFooter.appendChild(createListItem('#', 'Sobre Nós'))
-  ulFooter.appendChild(createListItem('#', 'Serviços'))
+  ulFooter.appendChild(createListItem('#', 'About Us'))
+  ulFooter.appendChild(createListItem('#', 'Services'))
   ulFooter.appendChild(createListItem('#', 'Horários'))
-  ulFooter.appendChild(createListItem('#', 'Contato'))
+  ulFooter.appendChild(createListItem('#', 'Contact'))
 
 
   quickLinks.appendChild(ulFooter)
