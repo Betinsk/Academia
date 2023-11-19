@@ -15,7 +15,7 @@ export function preencherTabela(arg) {
         const timesCelula = novaLinha.insertCell();
 
         nomeCelula.textContent = args.name;
-        videoCelula.innerHTML = '<iframe width="500" height="300" src='+ args.video+' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+        videoCelula.innerHTML = '<iframe src='+ args.video+' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
         serieCelula.textContent = args.series;
         timesCelula.textContent = args.times;
     }
