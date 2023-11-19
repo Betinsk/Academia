@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/works.css">
+    <link rel="stylesheet" href="styles/navStyle.css">
+    <link rel="stylesheet" href="styles/rodape.css">
+
+    <script type="module">
+        import { preencherTabela } from './exercicios.js'
+
+        const tricps = [
+            {
+                name: 'Tríceps no Banco:',
+                descricao: [
+                    'Use uma máquina de polia baixa com uma corda anexada.',
+                    'Mantenha os cotovelos junto ao corpo enquanto estende os braços para baixo.',
+                    'Ao final do movimento, foque na contração dos tríceps.'
+                ],
+                video: 'https://www.youtube.com/embed/J1YnmuweOkM?si=Nplw3bRZMWZTDEP6',
+                series: '3',
+                times: '10 to 12'
+            },
+            {
+                name: 'Tríceps Pulldown na Polia Alta:',
+                descricao: [
+                    'Use uma máquina de polia alta com uma barra em V ou uma barra reta.',
+                    'Mantenha os cotovelos próximos ao corpo e estenda completamente os braços para baixo.',
+                    'Mantenha a contração por um segundo antes de retornar à posição inicial.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '4',
+                times: '12 to 15'
+            },
+            {
+                name: 'Flexão de Tríceps (Tricep Dips):',
+                descricao: [
+                    'Use barras paralelas ou uma superfície elevada.',
+                    'Desça o corpo flexionando os cotovelos até um ângulo de 90 graus e, em seguida, estenda os braços para retornar à posição inicial.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '3',
+                times: '10 to 12'
+            },
+            {
+                name: 'Tríceps com Halteres (Dumbbell Tricep Kickback):',
+                descricao: [
+                    'Segure um haltere em cada mão.',
+                    'Incline o corpo para a frente, mantendo as costas retas.',
+                    'Estenda os braços para trás, concentrando-se na contração do tríceps.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '3',
+                times: '12 to 15'
+            },
+            {
+                name: 'Tríceps com Corda na Polia Baixa:',
+                descricao: [
+                    'Use uma máquina de polia baixa com uma corda anexada.',
+                    'Mantenha os cotovelos junto ao corpo enquanto estende os braços para baixo.',
+                    'Ao final do movimento, foque na contração dos tríceps.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '3',
+                times: '12 to 15'
+            },
+            {
+                name: 'Tríceps no Banco:',
+                descricao: [
+                    'Deite-se em um banco, segurando uma barra reta ou halteres acima do peito.',
+                    'Dobre os cotovelos e abaixe a barra ou halteres em direção à testa.',
+                    'Estenda os braços para cima, concentrando-se na contração dos tríceps.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '4',
+                times: '10 to 12'
+            },
+            {
+                name: 'Fundos na Máquina (Machine Dips):',
+                descricao: [
+                    'Use uma máquina de dips assistida.',
+                    'Desça o corpo mantendo os cotovelos dobrados em um ângulo de 90 graus e, em seguida, estenda os braços para retornar à posição inicial.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '3',
+                times: '12 to 15'
+            },
+            {
+                name: 'Tríceps com Halteres deitado:',
+                descricao: [
+                    'Deite-se em um banco e segure um haltere com ambas as mãos acima do peito.',
+                    'Dobre os cotovelos e abaixe o haltere em direção à testa antes de estender os braços de volta à posição inicial.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '3',
+                times: '12 to 15'
+            },
+            {
+                name: 'Extensão de Tríceps na Testa:',
+                descricao: [
+                    'Deite-se em um banco e segure uma barra ou halteres diretamente acima do peito.',
+                    'Dobre os cotovelos, baixando o peso em direção à testa e, em seguida, estenda os braços para cima.'
+                ],
+                video: 'https://www.youtube.com/embed/example-video-link',
+                series: '4',
+                times: '10 to 12'
+            }
+        ];
+
+        console.log(tricps)
+
+        preencherTabela(tricps)
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="nav" class="nav">
+    </div>
+
+    <div class="container center">
+        <div>
+            <table id="tabela" class="alingCenter tabela" width="80%">
+                <tr>
+                    <th>workout</th>
+                    <th>video</th>
+                    <th>Series</th>
+                    <th>Times</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer" id="footer"> </div> <!-- Rodapé-->
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="rodape.js"></script>
+
+</body>
+
+</html>

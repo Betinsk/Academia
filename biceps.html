@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/works.css">
+    <link rel="stylesheet" href="styles/navStyle.css">
+    <link rel="stylesheet" href="styles/rodape.css">
+
+    <script type="module">
+        import { preencherTabela } from './exercicios.js'
+
+const biceps = [
+{
+    name: 'Rosca Direta:',
+    descricao: [
+      'Segure uma barra com as palmas viradas para cima, mantendo os cotovelos próximos ao corpo.',
+      'Levante a barra em direção aos ombros, contraia os bíceps e depois baixe controladamente.'
+    ],
+    video: 'https://www.youtube.com/embed/example-video-link',
+    series: '4',
+    times: '10 to 12'
+  },
+  {
+    name: 'Rosca Alternada com Halteres:',
+    descricao: [
+      'Segure um haltere em cada mão com as palmas viradas para cima.',
+      'Levante um haltere em direção ao ombro enquanto mantém o outro braço estendido.',
+      'Alterne os braços em cada repetição.'
+    ],
+    video: 'https://www.youtube.com/embed/example-video-link',
+    series: '3',
+    times: '12 to 15'
+  },
+  {
+    name: 'Martelo com Halteres:',
+    descricao: [
+      'Segure um haltere em cada mão com as palmas viradas para dentro.',
+      'Levante os halteres em direção aos ombros mantendo os cotovelos próximos ao corpo.',
+      'Baixe os halteres de volta à posição inicial.'
+    ],
+    video: 'https://www.youtube.com/embed/example-video-link',
+    series: '3',
+    times: '12 to 15'
+  },
+  {
+    name: 'Rosca Scott:',
+    descricao: [
+      'Use um banco Scott ou utilize a máquina Scott.',
+      'Mantenha os cotovelos apoiados no banco ou na almofada da máquina e levante a barra em direção ao rosto.'
+    ],
+    video: 'https://www.youtube.com/embed/example-video-link',
+    series: '4',
+    times: '10 to 12'
+  },
+  {
+    name: 'Rosca Concentrada:',
+    descricao: [
+      'Sente-se em um banco com as pernas afastadas.',
+      'Apoie o braço no interior da coxa e levante o haltere em direção ao ombro.'
+    ],
+    video: 'https://www.youtube.com/embed/example-video-link',
+    series: '3',
+    times: '12 to 15'
+  },
+  {
+    name: 'Rosca Inversa:',
+    descricao: [
+      'Segure uma barra com as palmas viradas para baixo.',
+      'Mantenha os cotovelos próximos ao corpo e levante a barra em direção ao peito.'
+    ],
+    video: 'https://www.youtube.com/embed/example-video-link',
+    series: '3',
+    times: '12 to 15'
+  },
+  {
+    name: 'Rosca 21s:',
+    descricao: [
+      'Divida o movimento de uma rosca direta em três partes.',
+      'Realize sete repetições da parte inferior do movimento, sete da parte superior e sete completas.'
+    ],
+    video: 'https://www.youtube.com/embed/example-video-link',
+    series: '3',
+    times: '21 (7 em cada parte)'
+  }
+];
+
+console.log(biceps)
+
+preencherTabela(biceps)
+
+    </script>
+</head>
+<body>
+    <div id="nav" class="nav">
+    </div>
+
+    <div class="container center">
+        <div>
+            <table id="tabela" class="alingCenter tabela" width="80%">
+                <tr>
+                    <th>workout</th>
+                    <th>video</th>
+                    <th>Series</th>
+                    <th>Times</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer" id="footer"> </div> <!-- Rodapé-->
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="rodape.js"></script>
+    
+</body>
+</html>

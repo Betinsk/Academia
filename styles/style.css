@@ -213,6 +213,7 @@ h1 {
         .cardsMember {
             display: flex;
             flex-direction: column; 
+            align-items: center;
         }
 
         .cardMember {
