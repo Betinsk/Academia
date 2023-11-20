@@ -83,8 +83,21 @@ body {
   border-radius: 10%;
 }
 
+.divSocialMedia i  {
+  color: white;
+}
+
+@media (min-width: 900px) {
+ .divSocialMedia i {
+    visibility: hidden;
+   }
+}
+
+
 /* Estilo para telas menores (responsivo) */
 @media (max-width: 900px) {
+
+
   .nav {
     display: block;
   }
@@ -116,6 +129,14 @@ body {
     right: 125px;
   }
 
+  .divSocialMedia  {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 125px;
+    color: white;
+  }
+
   .divImg {
     display: flex;
     margin-bottom: 10px;
@@ -125,4 +146,26 @@ body {
     margin: 0px;
   }
 
+}
+
+@media (max-width: 430px) {
+ 
+  .hamburger {
+    display: block;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 310px;
+  }
+
+  .divSocialMedia {
+    display: block;
+
+    position: absolute;
+    top: 50px;
+    left: 310px;
+  }
+    
+  
 }

@@ -8,7 +8,7 @@ function createElementWithClass(tag, className, content) {
   }
   
   // Função para criar elementos <a> com atributos
-  function createAnchor(href, text) {
+ export function createAnchor(href, text) {
     const anchor = createElementWithClass('a', 'nav-link', text);
     anchor.href = href;
     return anchor;
@@ -33,7 +33,7 @@ function createElementWithClass(tag, className, content) {
     return paragraph;
   }
 
-  function createSocialIcons(className, href) {
+  export function createSocialIcons(className, href) {
     var classe = className.split(' ')
     const anchor = createAnchor(href);
     const icon  =  document.createElement('i');

@@ -35,7 +35,6 @@ th, td {
     .tabela-container {
       max-width: 900px;
       overflow-x: auto; /* Adiciona barra de rolagem horizontal se a tabela exceder a largura máxima */
-
     }
 
     .tabela {

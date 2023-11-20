@@ -1,4 +1,6 @@
 
+import { createSocialIcons } from "./rodape.js";
+
 // Função para criar elementos com classes e conteúdo
 function createElementWithClass(tag, className, content) {
   const element = document.createElement(tag);
@@ -58,6 +60,11 @@ nav.appendChild(title);
 nav.appendChild(divUl)
 divUl.appendChild(ul);
 
+const divSocial = createElementWithClass('div', 'divSocialMedia');
+nav.appendChild(divSocial)
+divSocial.appendChild(createSocialIcons('fa fa-facebook','#'))
+divSocial.appendChild(createSocialIcons('fa fa-twitter','#'))
+divSocial.appendChild(createSocialIcons('fa fa-instagram','#'))
 divHamburger.id = 'divHamburger';
 
 nav.appendChild(divHamburger)
@@ -65,6 +72,12 @@ nav.appendChild(divHamburger)
 // Defina a variável para armazenar a largura do navegador
 let larguraNavegador = window.innerWidth;
 let menuHamburguer = false
+
+if(larguraNavegador < 600) {
+  console.log(larguraNavegador)
+  
+}
+
 
 const toggleButton = document.getElementById('divHamburger');
 
@@ -86,6 +99,7 @@ function atualizarLarguraNavegador() {
   }
 
 }
+
 
 // Chame a função pela primeira vez
 atualizarLarguraNavegador();
