@@ -4,7 +4,6 @@
     font-weight: normal;
     font-style: normal;
   }
-  
 
 .tabela  {
     width: 100%; 
@@ -27,9 +26,18 @@ th, td {
     background-color: #f2f2f2;
   }
 
-  .workDays {
-    margin: 1px solid red;
-  }
+    .tableWork th {
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    .tableWork a {
+      color: black;
+    }
+    
+    .tableWork {
+      margin: auto;
+    }
 
   @media (max-width: 900px) {
     .tabela-container {

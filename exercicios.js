@@ -6,7 +6,6 @@ export function preencherTabela(arg) {
     const exercicios = document.getElementById("tabela");
 
     for (const args of arg) {
-        console.log('oi')
         const novaLinha = exercicios.insertRow();
 
         const nomeCelula = novaLinha.insertCell();
