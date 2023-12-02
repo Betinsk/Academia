@@ -6,8 +6,11 @@
 
 export function preencherTabela(arg) {
     const exercicios = document.getElementById("tabela");
+    var createTable = document.createElement('table')
+    createTable.classList.add('alingCenter', 'tabela')
     var createTr = document.createElement("tr");
-    exercicios.appendChild(createTr)
+    exercicios.appendChild(createTable)
+    createTable.appendChild(createTr)
 
      // Array de textos para os cabeçalhos
      var textosTH = ["Workout", "Video", "Series", "Times"];
@@ -16,13 +19,13 @@ export function preencherTabela(arg) {
         var novaTH = document.createElement("th");
         var textoTH = document.createTextNode(textosTH[i]);
         novaTH.appendChild(textoTH);
-        exercicios.rows[0].appendChild(novaTH)
+        createTable.rows[0].appendChild(novaTH)
         createTr.appendChild(novaTH)
      }
      
     for (const args of arg) {
 
-        const novaLinha = exercicios.insertRow();
+        const novaLinha = createTable.insertRow();
 
         const nomeCelula = novaLinha.insertCell();
         const videoCelula = novaLinha.insertCell();
