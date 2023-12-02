@@ -52,6 +52,8 @@ function createElementWithClass(tag, className, content) {
   rodape.appendChild(divFooterContant)
   divFooterContant.appendChild(divFooterInfo)
   divFooterInfo.appendChild(createElementWithClass('h3', 'title', 'Contact Us'))
+  divFooterInfo.appendChild(createElementWithClass('p', 'data', new Date()))
+
 
   divFooterInfo.appendChild(createListP('fa fa-map-marker', 'Adress: Amherst Dr NE, 101 Albuquerque, NM 87106, EUA '))
   divFooterInfo.appendChild(createListP('fa fa-envelope', 'Email: purefitness@gym.com '))

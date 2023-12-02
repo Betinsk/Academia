@@ -46,13 +46,31 @@ body{
     justify-content: center;
 }
 
-.cardMember {
+.cardMember{
     width: 375px;
     height: 365px;
     margin: 10px;
     border-radius: 2%;
     box-shadow: 0 2px 4px rgba(0, 0, 0.3, 0.3);
     background: linear-gradient(330.17deg, #14142B 18.22%, #561496 84.39%);
+}
+
+.cardMemberClassic {
+    width: 375px;
+    height: 365px;
+    margin: 10px;
+    border-radius: 2%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.3, 0.3);
+    background-color: white;
+}
+
+.cardContentClassic{
+    color: black;
+    padding: 25px;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 0.8em;
+    text-align: left;
 }
 
 .cardContent {
@@ -78,6 +96,8 @@ body{
     color: rgb(89, 44, 130);
     font-size: 0.8em;
     font-weight: bold;
+    border-radius:5%;
+
 }
 
 .price {
@@ -86,6 +106,38 @@ body{
     font-weight: bold;
     margin: 0;
 }
+
+.priceClassic {
+    font-size: 27px;
+    color: rgb(89, 44, 130);
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.learnMoreClassic{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 25px 0px 25px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: left;
+   
+}
+
+.learnMorePClassic{
+    padding: 15px;
+    margin: 0;
+    background-color: rgb(89, 44, 130);
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius:5%;
+}
+
 
 .learnMore{
     display: flex;
@@ -106,6 +158,8 @@ body{
     color: rgb(89, 44, 130);
     font-size: 1.1em;
     font-weight: bold;
+    border-radius:5%;
+
 }
 
 .bannerVideo {
