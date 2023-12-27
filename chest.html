@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width
@@ -12,48 +13,55 @@
 
     <script type="module">
         import { preencherTabela } from './exercicios.js'
-    
-    const chest = [
-        { 
-            name: 'Voador',
-            video: 'https://www.youtube.com/embed/J1YnmuweOkM?si=Nplw3bRZMWZTDEP6',
-            series: '3',
-            times: ' 10 to 12'
-        },
-    
-        {
-            name: 'Incline bench press',
-            video: 'https://www.youtube.com/embed/Ky_JXqloq0w?si=3M07xaEI0IfMgFxr',
-            series: '3',
-            times: ' 10 to 12'
-        },
-    
-        {
-            name: 'Crosshover',
-            video: 'https://www.youtube.com/embed/3iHf0jeHYNg?si=M6C2Vm5wuWemplq2',
-            series: '3',
-            times: ' 10 to 12'
-        }, 
-        
-        
-        {
-            name: 'SUPINO MÁQUINA',
-            video: 'https://www.youtube.com/embed/a56lnqizt-A?si=HgLu9KOm5W5QNluH',
-            series: '3',
-            times: ' 10 to 12'
-        }, 
-    ];
-            // Chame a função para preencher a tabela assim que a página for carregada
-           preencherTabela(chest);
-        </script>
+        import { preencherCards } from './exercicios.js'
+        const chest = [
+            {
+                name: 'Voador',
+                video: 'https://www.youtube.com/embed/J1YnmuweOkM?si=Nplw3bRZMWZTDEP6',
+                series: '3',
+                times: ' 10 to 12'
+            },
+
+            {
+                name: 'Incline bench press',
+                video: 'https://www.youtube.com/embed/Ky_JXqloq0w?si=3M07xaEI0IfMgFxr',
+                series: '3',
+                times: ' 10 to 12'
+            },
+
+            {
+                name: 'Crosshover',
+                video: 'https://www.youtube.com/embed/3iHf0jeHYNg?si=M6C2Vm5wuWemplq2',
+                series: '3',
+                times: ' 10 to 12'
+            },
+
+
+            {
+                name: 'SUPINO MÁQUINA',
+                video: 'https://www.youtube.com/embed/a56lnqizt-A?si=HgLu9KOm5W5QNluH',
+                series: '3',
+                times: ' 10 to 12'
+            },
+        ];
+        // Chame a função para preencher a tabela assim que a página for carregada
+        preencherCards()
+        preencherTabela(chest);
+    </script>
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <div id="nav" class="nav">
     </div>
 
     <div class="container center">
+
+        <div id="divCards" class='divCards'>
+
+        </div>
+
         <div class="tabela-container" id="tabela"></div>
     </div>
 
@@ -62,7 +70,7 @@
 </body>
 
 
-<script  type="module" src="script.js"></script>
+<script type="module" src="script.js"></script>
 <script type="module" src="rodape.js"></script>
 
 </html>

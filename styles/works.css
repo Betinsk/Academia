@@ -5,6 +5,40 @@
     font-style: normal;
   }
 
+  .divCards {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px; /* Largura inicial para telas maiores */
+    height: 325px;
+    flex-wrap: wrap;
+
+  }
+
+  .card img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Tornar o card de largura total em telas menores */
+    }
+  }
+
+
 .tabela  {
     width: 100%; 
     border: 1px solid #ddd;

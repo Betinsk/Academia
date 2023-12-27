@@ -2,7 +2,7 @@
 import { createSocialIcons } from "./rodape.js";
 
 // Função para criar elementos com classes e conteúdo
-function createElementWithClass(tag, className, content) {
+export function createElementWithClass(tag, className, content) {
   const element = document.createElement(tag);
   element.classList.add(className);
   if (content) {
@@ -46,7 +46,6 @@ ul.appendChild(createListItem('benefits.html', 'Benefits'));
 ul.appendChild(createListItem('locais.html', 'Places'));
 ul.appendChild(createListItem('workouts.html', 'Workouts'));
 
-
 // Criando o ícone de menu hamburguer
 const divHamburger = createElementWithClass('div', 'hamburger');
 
@@ -75,9 +74,7 @@ let menuHamburguer = false
 
 if(larguraNavegador < 600) {
   console.log(larguraNavegador)
-  
 }
-
 
 const toggleButton = document.getElementById('divHamburger');
 
