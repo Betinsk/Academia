@@ -7,7 +7,7 @@ import { createElementWithClass } from "./script.js";
         const arg = arr.length
             for (var i = 0; i < arg; i++) {
                 const exercicios = document.getElementById('divCards');
-                var a = createElementWithClass('a', 'link')
+                var a = createElementWithClass('a', 'cardLink', '')
 
                     var div = createElementWithClass('div', 'card','')
                          var title = createElementWithClass('p', 'cardTitle', arr[i].name)
