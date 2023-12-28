@@ -3,19 +3,24 @@
 //Criando ths da tabela usando for e um array com os nomes que eu quero colocar na tabela
 import { createElementWithClass } from "./script.js";
 
+    export function preencherCards(arr) {
+        const arg = arr.length
+            for (var i = 0; i < arg; i++) {
+                const exercicios = document.getElementById('divCards');
+                var a = createElementWithClass('a', 'link')
 
-export function preencherCards() {
-    const arg = 10
-    const img = 'https://static.strengthlevel.com/images/illustrations/incline-bench-press-1000x1000.jpg' 
-    for (var i = 0; i < arg; i++) {
-    const exercicios = document.getElementById('divCards');
-    var div = createElementWithClass('div', 'card', 'Incline bench press')
-    var imgAd = createElementWithClass('img', 'a', '')
-    imgAd.src = img
-    exercicios.appendChild(div)
-    div.appendChild(imgAd)
+                    var div = createElementWithClass('div', 'card','')
+                         var title = createElementWithClass('p', 'cardTitle', arr[i].name)
+                      var imgAd = createElementWithClass('img', 'cardImg', '')
+                  imgAd.src = arr[i].imgs
+              exercicios.appendChild(a)
+              a.href = 'oi'
+              a.appendChild(div)
+
+            div.appendChild(title)
+         div.appendChild(imgAd)
+        }
     }
-}
 
 export function preencherTabela(arg) {
     const exercicios = document.getElementById("tabela");

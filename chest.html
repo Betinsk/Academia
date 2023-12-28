@@ -16,14 +16,23 @@
         import { preencherCards } from './exercicios.js'
         const chest = [
             {
-                name: 'Voador',
+                name: 'Chest Press',
+                imgs: 'https://static.strengthlevel.com/images/illustrations/chest-press-1000x1000.jpg',
+                video: 'https://www.youtube.com/embed/a56lnqizt-A?si=HgLu9KOm5W5QNluH',
+                series: '3',
+                times: ' 10 to 12'
+            },
+            {
+                name: 'Chest Machine',
+                imgs: 'https://static.strengthlevel.com/images/illustrations/machine-chest-fly-1000x1000.jpg',
                 video: 'https://www.youtube.com/embed/J1YnmuweOkM?si=Nplw3bRZMWZTDEP6',
                 series: '3',
                 times: ' 10 to 12'
             },
 
             {
-                name: 'Incline bench press',
+                name: 'Incline Bench Press',
+                imgs: 'https://static.strengthlevel.com/images/illustrations/incline-bench-press-1000x1000.jpg',
                 video: 'https://www.youtube.com/embed/Ky_JXqloq0w?si=3M07xaEI0IfMgFxr',
                 series: '3',
                 times: ' 10 to 12'
@@ -31,21 +40,16 @@
 
             {
                 name: 'Crosshover',
+                imgs: 'https://static.strengthlevel.com/images/illustrations/cable-fly-1000x1000.jpg',
                 video: 'https://www.youtube.com/embed/3iHf0jeHYNg?si=M6C2Vm5wuWemplq2',
                 series: '3',
                 times: ' 10 to 12'
-            },
+            }
 
 
-            {
-                name: 'SUPINO MÁQUINA',
-                video: 'https://www.youtube.com/embed/a56lnqizt-A?si=HgLu9KOm5W5QNluH',
-                series: '3',
-                times: ' 10 to 12'
-            },
         ];
         // Chame a função para preencher a tabela assim que a página for carregada
-        preencherCards()
+        preencherCards(chest)
         preencherTabela(chest);
     </script>
     <title>Document</title>
