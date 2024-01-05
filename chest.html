@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script type="module">
+        
         import { preencherTabela } from './exercicios.js'
         import { preencherCards } from './exercicios.js'
+        import { criarPagina } from './criarPagina.js'
+
         const chest = [
             {
                 name: 'Chest Press',
@@ -46,11 +49,23 @@
                 times: ' 10 to 12'
             }
 
-
         ];
         // Chame a função para preencher a tabela assim que a página for carregada
-        preencherCards(chest)
-        preencherTabela(chest);
+          preencherCards(chest);
+          preencherTabela(chest);
+
+  /*  //Em resumo, esse bloco de código garante que a função criarPagina(chest)
+    //seja chamada apenas quando o documento estiver completamente carregado, e apenas quando o link com ID linkCriarPagina 
+            document.addEventListener('DOMContentLoaded', function () {
+                // Adicione um event listener ao link
+                document.getElementById('linkCriarPagina').addEventListener('click', function () {
+                    // Criar uma nova página dinamicamente
+                    criarPagina(chest[1]);
+                    return false; // Evita a execução padrão do link
+                });
+            });
+            */
+
     </script>
     <title>Document</title>
 </head>

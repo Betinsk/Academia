@@ -2,10 +2,11 @@
 // Função para preencher a tabela com o array de objetos
 //Criando ths da tabela usando for e um array com os nomes que eu quero colocar na tabela
 import { createElementWithClass } from "./script.js";
+import { criarPagina } from "./criarPagina.js";
 
     export function preencherCards(arr) {
-        const arg = arr.length
-            for (var i = 0; i < arg; i++) {
+
+            for (var i = 0; i < arr.length; i++) {
                 const exercicios = document.getElementById('divCards');
                 var a = createElementWithClass('a', 'cardLink', '')
 
@@ -13,12 +14,26 @@ import { createElementWithClass } from "./script.js";
                          var title = createElementWithClass('p', 'cardTitle', arr[i].name)
                       var imgAd = createElementWithClass('img', 'cardImg', '')
                   imgAd.src = arr[i].imgs
+                  console.log(arr[i])
               exercicios.appendChild(a)
-              a.href = 'oi'
+              a.href = '#'
               a.appendChild(div)
 
             div.appendChild(title)
          div.appendChild(imgAd)
+
+        // Adiciona um event listener ao link do cartão
+        a.addEventListener('click', function (event) {
+            // Captura o índice do item clicado (usando o atributo "data-index")
+            var index = event.currentTarget.dataset.index;
+
+            // Criar uma nova página dinamicamente quando o link do cartão for clicado
+            criarPagina(arr[index]);
+            return false; // Evita a execução padrão do link
+        });
+        // Adiciona um atributo "data-index" ao link para armazenar o índice do item no array
+        a.dataset.index = i;
+
         }
     }
 
