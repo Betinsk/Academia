@@ -6,34 +6,28 @@ import { criarPagina } from "./criarPagina.js";
 
     export function preencherCards(arr) {
 
-            for (var i = 0; i < arr.length; i++) {
-                const exercicios = document.getElementById('divCards');
-                var a = createElementWithClass('a', 'cardLink', '')
-
+        for (var i = 0; i < arr.length; i++) {
+            const cards = document.getElementById('divCards');
+                var cardLink = createElementWithClass('a', 'cardLink', '')
                     var div = createElementWithClass('div', 'card','')
-                         var title = createElementWithClass('p', 'cardTitle', arr[i].name)
-                      var imgAd = createElementWithClass('img', 'cardImg', '')
+                        var title = createElementWithClass('p', 'cardTitle', arr[i].name)
+                    var imgAd = createElementWithClass('img', 'cardImg', '')
                   imgAd.src = arr[i].imgs
-                  console.log(arr[i])
-              exercicios.appendChild(a)
-              a.href = '#'
-              a.appendChild(div)
-
+                  cards.appendChild(cardLink)
+              cardLink.appendChild(div)
             div.appendChild(title)
          div.appendChild(imgAd)
 
         // Adiciona um event listener ao link do cartão
-        a.addEventListener('click', function (event) {
+        cardLink.addEventListener('click', function (event) {
             // Captura o índice do item clicado (usando o atributo "data-index")
-            var index = event.currentTarget.dataset.index;
-
-            // Criar uma nova página dinamicamente quando o link do cartão for clicado
-            criarPagina(arr[index]);
-            return false; // Evita a execução padrão do link
-        });
+                 var index = event.currentTarget.dataset.index;
+                     // Criar uma nova página dinamicamente quando o link do cartão for clicado
+                  criarPagina(arr[index]);
+              return false; // Evita a execução padrão do link
+             });     
         // Adiciona um atributo "data-index" ao link para armazenar o índice do item no array
-        a.dataset.index = i;
-
+        cardLink.dataset.index = i;
         }
     }
 

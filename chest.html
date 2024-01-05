@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/works.css">
     <link rel="stylesheet" href="styles/navStyle.css">
@@ -15,7 +14,6 @@
         
         import { preencherTabela } from './exercicios.js'
         import { preencherCards } from './exercicios.js'
-        import { criarPagina } from './criarPagina.js'
 
         const chest = [
             {
@@ -54,7 +52,7 @@
           preencherCards(chest);
           preencherTabela(chest);
 
-  /*  //Em resumo, esse bloco de código garante que a função criarPagina(chest)
+     /*  //Em resumo, esse bloco de código garante que a função criarPagina(chest)
     //seja chamada apenas quando o documento estiver completamente carregado, e apenas quando o link com ID linkCriarPagina 
             document.addEventListener('DOMContentLoaded', function () {
                 // Adicione um event listener ao link
@@ -67,29 +65,25 @@
             */
 
     </script>
-    <title>Document</title>
-</head>
+            <title>Document</title>
+            </head>
+                <body>
+                    <div id="nav" class="nav"> </div>
+                        <div class="container center">
+                        <div id="divCards" class='divCards'></div>
+                    <div class="tabela-container" id="tabela"></div>      
+                    </div>
+                <div class="footer" id="footer"> </div> <!-- Rodapé-->
+            </body>     
+            <script type="module" src="script.js"></script>
+        <script type="module" src="rodape.js"></script>
+    </html> 
+    
 
-<body>
+        
 
-    <div id="nav" class="nav">
-    </div>
-
-    <div class="container center">
-
-        <div id="divCards" class='divCards'>
-
-        </div>
-
-        <div class="tabela-container" id="tabela"></div>
-    </div>
-
-    <div class="footer" id="footer"> </div> <!-- Rodapé-->
-
-</body>
+  
 
 
-<script type="module" src="script.js"></script>
-<script type="module" src="rodape.js"></script>
 
-</html>
+ 
