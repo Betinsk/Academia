@@ -1,5 +1,10 @@
 import { createElementWithClass } from "./script.js";
 
+function createAnchor(href, className, text) {
+  const anchor = createElementWithClass('a', className, text);
+  anchor.href = href;
+  return anchor;
+}
 
 export function criarPagina(array) {
     
@@ -7,47 +12,37 @@ export function criarPagina(array) {
     const html = document.createElement('html');
     const head = document.createElement('head');
     const body = document.createElement('body');
-    const title = document.createElement('title');
-    const h1 = document.createElement('h1');
-    const paragrafo = document.createElement('p');
-    const list = document.createElement('ul');
-    const back = document.createElement('a')
-
-    // Adição de conteúdo aos elementos
-    title.textContent = array.type;
-    h1.textContent = array.type;
-    back.href = 'workouts.html'
-    back.textContent = 'BACK';
-
-     // Adição do vídeo
-     const videoElement = document.createElement('iframe');
-     videoElement.src = array.video;
-     videoElement.width = '560';
-     videoElement.height = '315';
-     videoElement.frameborder = '0';
-     videoElement.allowfullscreen = 'true';
-
-    //Array completo
-   /* array.forEach((info) => {
-      const listItem = document.createElement('li');
-      listItem.textContent = array.name;
-      lista.appendChild(listItem);
-    });*/
-
-        //Array na posição
-        list.appendChild(createElementWithClass('li', 'list', array.name ));
-        list.appendChild(createElementWithClass('p', 'description', array.description))
+    const container = createElementWithClass('div', 'container', '')
+    const mainDiv = createElementWithClass('div', 'mainDiv', '')
+    const contentDiv = document.createElement('div');
+    const back = createAnchor('chest.html', 'buttonBack', 'BACK')
 
 
+      // Adição do vídeo
+      const videoElement = document.createElement('iframe');
+      videoElement.src = array.video;
+      videoElement.width = '560';
+      videoElement.height = '315';
+      videoElement.frameborder = '0';
+      videoElement.allowfullscreen = 'true';
+ 
     // Adição de elementos ao DOM
-    head.appendChild(title);
-    body.appendChild(h1);
-    body.appendChild(paragrafo);
-    body.appendChild(list);
-    body.appendChild(videoElement); // Adiciona o elemento de vídeo ao corpo
-    body.appendChild(back)
+    head.appendChild(createElementWithClass('title', 'titlePage', array.type));
+    body.appendChild(container)
+    container.appendChild(mainDiv)
+    mainDiv.appendChild(contentDiv);
+    mainDiv.appendChild(videoElement); // Adiciona o elemento de vídeo ao corpo
+    mainDiv.appendChild(back)
     html.appendChild(head);
     html.appendChild(body);
+  
+  
+
+   
+        //Array na posição
+        contentDiv.appendChild(createElementWithClass('h3', 'name', array.name ));
+        contentDiv.appendChild(createElementWithClass('p', 'description', array.description))
+
   
     // Limpa o conteúdo existente do corpo antes de adicionar o novo conteúdo
     document.body.innerHTML = '';

@@ -16,7 +16,8 @@
         import { preencherCards } from './exercicios.js'
 
         const chest = [
-            {
+            {   
+                id: 0,
                 type: 'Chest',
                 name: 'Chest Press',
                 description: 'Campbell: To do the chest press with dumbbells, lie on your back with a dumbbell in each hand. Hold your upper arms perpendicular to your body and your forearms perpendicular to the floor. Slowly press the weights upward until your elbows are almost straight. You ll feel tension across your upper chest.',
@@ -25,8 +26,13 @@
                 series: '3',
                 times: ' 10 to 12'
             },
-            {   type: 'Chest',
+
+            
+            {   
+                id: 1,
+                type: 'Chest',
                 name: 'Chest Machine',
+                description: 'Adjust the seat on the Chest Press Machine to align the handles with your chest when seated, and choose a weight level by inserting the pin into the stack. Position yourself by sitting with your back against the machine, feet flat on the ground, and hands gripping the handles shoulder-width apart, maintaining a straight back and 90-degree elbow angle. Push the handles away from your chest while exhaling, focusing on your chest muscles, and then slowly return to the starting position by bending your elbows. Perform the desired number of controlled repetitions, utilize safety catches if available, and take brief breaks between sets according to your workout plan. Remember to use proper form to prevent injury, start with a lighter weight before progressing, seek guidance from a fitness professional if unsure, and consult a healthcare professional if you have health concerns.',
                 imgs: 'https://static.strengthlevel.com/images/illustrations/machine-chest-fly-1000x1000.jpg',
                 video: 'https://www.youtube.com/embed/J1YnmuweOkM?si=Nplw3bRZMWZTDEP6',
                 series: '3',
@@ -34,15 +40,21 @@
             },
 
             {
+                id: 2,
+                type: 'Chest',
                 name: 'Incline Bench Press',
+                description: 'Adjust the incline bench to a comfortable angle, typically between 15 to 45 degrees. Choose an appropriate weight by placing the pin in the stack. Position yourself on the incline bench with your back against the pad, feet flat on the ground, and grip the barbell with hands slightly wider than shoulder-width apart. Keep your back straight, chest up, and elbows at around a 90-degree angle. Lower the barbell to the upper chest while inhaling, then push it back up to the starting position while exhaling. Perform controlled repetitions, ensuring proper form throughout. Set safety catches if available, start with a manageable weight, and gradually progress. Take brief breaks between sets, track your progress, and consult a fitness professional if needed. Use caution to prevent injury and consult a healthcare professional if you have health concerns.',
                 imgs: 'https://static.strengthlevel.com/images/illustrations/incline-bench-press-1000x1000.jpg',
                 video: 'https://www.youtube.com/embed/Ky_JXqloq0w?si=3M07xaEI0IfMgFxr',
                 series: '3',
                 times: ' 10 to 12'
             },
 
-            {
+            {   
+                id: 3, 
+                type: 'Chest',
                 name: 'Crosshover',
+                description: 'Adjust the pulleys on the cable crossover machine to your preferred height, usually at both high and low positions. Attach a single handle to each cable, ensuring they are set at the same height on both sides of the machine. Stand in the center of the machine, facing outward, and grasp the handles with palms facing downward. Adopt a staggered stance for stability, keeping a slight bend in your elbows. Initiate the movement by bringing both handles together in front of your body, slightly bending your elbows. Squeeze your chest muscles at the fully contracted position, maintaining an upright posture and engaged core. Slowly and with control, open your arms, returning to the starting position while keeping tension on the cables. Perform the desired number of repetitions, focusing on smooth and controlled movements. Experiment with different angles and heights to target various areas of the chest and shoulders. Breathe out as you bring the handles together and inhale as you return to the starting position. Adjust the weight on the machine to match your fitness level, gradually increasing resistance as needed. Ensure proper form to maximize effectiveness and minimize the risk of injury. Consult with a fitness professional or healthcare provider if you have any health concerns before incorporating new exercises into your routine.',
                 imgs: 'https://static.strengthlevel.com/images/illustrations/cable-fly-1000x1000.jpg',
                 video: 'https://www.youtube.com/embed/3iHf0jeHYNg?si=M6C2Vm5wuWemplq2',
                 series: '3',
@@ -52,7 +64,6 @@
         ];
         // Chame a função para preencher a tabela assim que a página for carregada
           preencherCards(chest);
-          preencherTabela(chest);
 
      /*  //Em resumo, esse bloco de código garante que a função criarPagina(chest)
     //seja chamada apenas quando o documento estiver completamente carregado, e apenas quando o link com ID linkCriarPagina 

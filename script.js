@@ -12,7 +12,7 @@ export function createElementWithClass(tag, className, content) {
 }
 
 // Função para criar elementos <a> com atributos
-function createAnchor(href, text) {
+export function createAnchor(href, text) {
   const anchor = createElementWithClass('a', 'nav-link', text);
   anchor.href = href;
   return anchor;
